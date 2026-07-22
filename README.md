@@ -204,7 +204,8 @@ docs/
 
 <p align="center">
 
-<img src="docs/screenshots/grafana-dashboard.png" width="1000"/>
+<img width="1000" height="900" alt="image" src="https://github.com/user-attachments/assets/79ae79b7-3925-4aac-a5df-d70eebd6944a" />
+
 
 </p>
 
