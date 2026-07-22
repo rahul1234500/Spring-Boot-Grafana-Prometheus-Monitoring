@@ -1,0 +1,37 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: Monitoring-Application
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      show-details: always
+    prometheus:
+      enabled: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+      environment: production
+    distribution:                      # <--- Fixed: Placed as a sibling to 'tags', not inside it
+      percentiles-histogram:
+        http.server.requests: true
+
+# Custom Application Properties
+app:
+  monitoring:
+    greeting-message: "Hello World! Application is healthy and being monitored."
+    metrics:
+      request-counter-name: "app_monitor_requests_total"
+      request-timer-name: "app_monitor_execution_latency_seconds"
+      status-tag-key: "status"
