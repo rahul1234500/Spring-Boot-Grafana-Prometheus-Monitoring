@@ -275,9 +275,10 @@ or
 
 # 📸 Screenshots
 
-| Grafana Dashboard | Prometheus Targets |
-|-------------------|--------------------|
-| Add Screenshot | Add Screenshot |
+
+| Grafana Dashboard | Prometheus Query |
+|-------------------|------------------|
+| <img src="https://github.com/user-attachments/assets/04fbc137-ceb8-4329-9285-d2b76af35cba" alt="Grafana Dashboard" width="550"/> | <img src="https://github.com/user-attachments/assets/0ecfb2f8-3894-499c-b8ee-f325d8794ad0" alt="Prometheus Query" width="550"/> |
 
 ---
 
